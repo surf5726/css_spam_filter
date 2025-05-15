@@ -19,3 +19,7 @@
 ## Update database
 
 - Sign-in `lite.ip2location.com` and download latest database.
+
+## Build
+
+- Visual Studio 2022, C++ Desktop Development.
