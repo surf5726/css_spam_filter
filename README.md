@@ -10,7 +10,7 @@
 
 ## VAC Risks
 
-- Under normal circumstances, there shouldn't be any issues, as it doesn't involve any memory operations related to cheating.
+- Under normal circumstances, there shouldn't be any issues, as it doesn't involve any memory operations related to cheating. But yes, use at your own risk.
 
 ## Configuration
 
