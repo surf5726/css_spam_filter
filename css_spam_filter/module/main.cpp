@@ -43,8 +43,7 @@ void load_conf(void)
 			{
 				if (json["white_list_ip"][i] == "x.x.x.x")
 					continue;
-				else
-					white_list_ip.emplace_back(json["white_list_ip"][i]);
+				white_list_ip.emplace_back(json["white_list_ip"][i]);
 			}
 		}
 	}
@@ -121,7 +120,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
 {
 	switch (fdwReason)
 	{
-		case (DLL_PROCESS_ATTACH):
+		case DLL_PROCESS_ATTACH:
 		{
 			load_conf();
 			if (json["enable"])
@@ -136,7 +135,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
 			}
 			break;
 		}
-		case (DLL_PROCESS_DETACH):
+		case DLL_PROCESS_DETACH:
 		{
 			if (json["enable"])
 			{
