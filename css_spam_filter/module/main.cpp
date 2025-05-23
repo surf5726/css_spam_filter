@@ -40,7 +40,7 @@ int WSAAPI mysendto(
 			sendto(s, PAYLOAD, (int)strlen(PAYLOAD), 0, (sockaddr *)&check, len);
 			char result[16] = { 0 };
 			recvfrom(s, result, sizeof(result), 0, (sockaddr *)&check, &len);
-			if (result[4] != 'A')
+			if (result[4] != 'A' && result[4] != 'U')
 				return 0;
 		}
 	}
