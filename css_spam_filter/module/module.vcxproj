@@ -107,7 +107,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.\detours;.\maxmind\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\detours;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <DisableSpecificWarnings>;4996</DisableSpecificWarnings>
     </ClCompile>
@@ -124,7 +124,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.\detours;.\maxmind\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\detours;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <DisableSpecificWarnings>;4996</DisableSpecificWarnings>
     </ClCompile>
@@ -141,13 +141,9 @@
     <ClCompile Include="detours\image.cpp" />
     <ClCompile Include="detours\modules.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="maxmind\src\data-pool.c" />
-    <ClCompile Include="maxmind\src\maxminddb.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="detours\detours.h" />
-    <ClInclude Include="maxmind\src\data-pool.h" />
-    <ClInclude Include="maxmind\src\maxminddb-compat-util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

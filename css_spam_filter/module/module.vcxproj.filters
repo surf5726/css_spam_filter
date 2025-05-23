@@ -14,30 +14,15 @@
     <ClCompile Include="detours\modules.cpp">
       <Filter>detours</Filter>
     </ClCompile>
-    <ClCompile Include="maxmind\src\data-pool.c">
-      <Filter>maxmind</Filter>
-    </ClCompile>
-    <ClCompile Include="maxmind\src\maxminddb.c">
-      <Filter>maxmind</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="detours">
       <UniqueIdentifier>{a475da95-691d-41f8-a343-d0abb8f07889}</UniqueIdentifier>
     </Filter>
-    <Filter Include="maxmind">
-      <UniqueIdentifier>{0bb12df2-bbf9-48dd-be6c-4c7242358fe3}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="detours\detours.h">
       <Filter>detours</Filter>
-    </ClInclude>
-    <ClInclude Include="maxmind\src\data-pool.h">
-      <Filter>maxmind</Filter>
-    </ClInclude>
-    <ClInclude Include="maxmind\src\maxminddb-compat-util.h">
-      <Filter>maxmind</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
