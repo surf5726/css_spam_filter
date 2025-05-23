@@ -1,6 +1,6 @@
 # css_spam_filter
 
-- A tool based on a free database that uses hook methods to filter servers, suitable for `Counter-Strike: Source`.
+- A tool based socket hook methods to filter servers, suitable for `Counter-Strike: Source`.
 
 ## Usage
 
@@ -10,15 +10,7 @@
 
 ## VAC Risks
 
-- Under normal circumstances, there shouldn't be any issues, as it doesn't involve any memory operations related to cheating. But yes, use at your own risk.
-
-## Configuration
-
-- Edit css_spam_filter.json
-
-## Update database
-
-- Sign-in `lite.ip2location.com` and download latest database.
+- Use at your own risk.
 
 ## Build
 
