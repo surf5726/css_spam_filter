@@ -36,7 +36,7 @@ int WSAAPI mysendto(
 			check.sin_addr.S_un.S_addr = extract->sin_addr.S_un.S_addr;
 			check.sin_port = extract->sin_port;
 			int len = sizeof(check);
-			sendto(s, PAYLOAD, (int)strlen(PAYLOAD), 0, (sockaddr *)&check, len);
+			pfnsendto(s, PAYLOAD, (int)strlen(PAYLOAD), 0, (sockaddr *)&check, len);
 			char result[16] = { 0 };
 			recvfrom(s, result, sizeof(result), 0, (sockaddr *)&check, &len);
 			if (result[4] != 'A' && result[4] != 'U')
